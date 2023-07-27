@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./style.css">
+    <title>Music player</title>
+</head>
+<body>
+    <main class="container">
+        <div class="top-bar">
+            <i class="material-icons " id="favorite">favorite_border</i>
+            <span>Now playing</span>
+            <i class="material-icons">add</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="song-timer">
+            <div class="progress-time">
+                <div class="current-progress">0:00</div>
+                <div class="max-progress">0:00</div>
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+    
+
+        <div class="controls">
+            <i id="repeat-playlist" class="material-icons" title="playlist looped">repeat</i>
+            <i id="prev" class="material-icons prev">skip_previous</i>
+
+            <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons next">skip_next</i>
+            <i id="more-music" class="material-icons ">queue_music</i>
+        </div>
+    </main>
+    
+    <div class="music-list">
+        <div class="header">
+            <div class="row">
+                <i class="list material-icons" >queue_music</i>
+                <span>Music List</span>
+            </div>
+            <i id="close" class="material-icons">close</i>
+        </div>
+        <ul>
+            <li>
+                <div class="row">
+                <span>Alone</span>
+                <p>Alan Walker</p>
+                </div>
+                <span class="audio-duration">2:43</span>
+                
+            </li>
+            <li>
+                <div class="row">
+                <span>Baby</span>
+                <p>Justin Biebber</p>
+                </div>
+                <span class="audio-duration">3:39</span>
+                
+            </li>
+            <li>
+                <div class="row">
+                <span>Euphoria</span>
+                <p>BTS</p>
+                </div>
+                <span class="audio-duration">3:47</span>
+                
+            </li>
+            <li>
+                <div class="row">
+                <span>Fake Love</span>
+                <p>BTS</p>
+                </div>
+                <span class="audio-duration">4:04</span>
+                
+            </li>
+            <li>
+                <div class="row">
+                <span>Headlights</span>
+                <p>Alan Walker</p>
+                </div>
+                <span class="audio-duration">2:41</span>
+                
+            </li>
+            <li>
+                <div class="row">
+                <span>Let me love you</span>
+                <p>Justin Biebber</p>
+                </div>
+                <span class="audio-duration">3:25</span>
+                
+            </li>
+            <li>
+                <div class="row">
+                <span>Set me free</span>
+                <p>Jimin from BTS</p>
+                </div>
+                <span class="audio-duration">3:44</span>
+                
+            </li>
+            <li>
+                <div class="row">
+                <span>Seven</span>
+                <p>Jung Kook from BTS</p>
+                </div>
+                <span class="audio-duration">3:04</span>
+            </li>
+            <li>
+                <div class="row">
+                <span>Stay</span>
+                <p>Justin Biebber</p>
+                </div>
+                <span class="audio-duration">2:19</span>
+                
+            </li>
+        </ul>
+    </div>
+
+    <script src="./music-list.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
